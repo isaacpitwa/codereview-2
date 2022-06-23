@@ -560,3 +560,53 @@ textarea {
     height: 32px;
   }
 }
+
+.toggle-menu {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(60 58 57 / 90%);
+  z-index: 10;
+  padding: 62px 28px;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.toggle-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+.toggle-nav .nav-list .nav-item a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.close-wrapper {
+  padding: 16px 100px;
+}
+
+.toggle-menu img {
+  float: right;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.hidden {
+  display: none;
+}
