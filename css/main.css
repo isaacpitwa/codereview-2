@@ -580,10 +580,13 @@ textarea {
   padding-top: 32px;
 }
 
+.toggle-nav .nav-list .nav-item {
+  border-bottom:  2px solid #6F6C6B;
+}
 .toggle-nav .nav-list .nav-item a {
   font-size: 32px;
   font-weight: 600;
-  color: #fff;
+  color: #FFF5E1;
   margin-bottom: 40px;
 }
 
