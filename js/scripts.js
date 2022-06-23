@@ -6,9 +6,6 @@ function toggleMenu() {
     document.getElementById('toggle-btn').classList.toggle('hidden');
     document.getElementById('logo').classList.toggle('hidden');
 
-
-
-
     // document.querySelector('header').classList.toggle('remove-padding');
   }
 
