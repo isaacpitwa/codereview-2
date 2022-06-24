@@ -27,12 +27,13 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
 #logo {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -43,6 +44,7 @@ header {
   background: transparent;
   border: none;
   outline: none;
+  display: block;
 }
 
 .menu-bars i {
@@ -99,7 +101,7 @@ main {
 }
 
 .intro-me {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -109,7 +111,7 @@ main {
 }
 
 .intro-text {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -128,7 +130,7 @@ main {
 }
 
 .social-link:hover {
-  background-color: rgba(255, 255, 255, 0.096);
+  background-color: rgb(255 255 255 / 9.6%);
 }
 
 .social-icon {
@@ -184,7 +186,7 @@ main {
 }
 
 .background-div {
-  background: linear-gradient(0deg, #2a2728, #98909280, rgba(255, 255, 255, 0));
+  background: linear-gradient(0deg, #2a2728, #98909280, rgb(255 255 255 / 0%));
   position: absolute;
   top: 0;
   right: 0;
@@ -194,7 +196,7 @@ main {
 
 .description,
 .white-description {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -217,7 +219,7 @@ main {
   width: 80vw;
   background-size: cover;
   background-position: 50%;
-  text-shadow: 0 0 2px rgb(0, 0, 0);
+  text-shadow: 0 0 2px rgb(0 0 0);
 }
 
 .card-link {
@@ -229,7 +231,7 @@ main {
 
 li {
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -240,9 +242,8 @@ li {
 }
 
 .card-stacks li {
-  background: rgba(255, 255, 255, 0.24) !important;
+  background: rgb(255 255 255 / 24%) !important;
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 }
 
 .gtime {
@@ -279,7 +280,7 @@ li {
 }
 
 .project-stacks li:hover {
-  background: rgba(0, 0, 0, 0.349);
+  background: rgb(0 0 0 / 34.9%);
 }
 
 #about-me,
@@ -293,7 +294,7 @@ li {
 }
 
 .about-me-text {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -308,7 +309,7 @@ li {
   justify-content: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -339,7 +340,7 @@ li {
 }
 
 .list-title {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -363,7 +364,7 @@ li {
 }
 
 #contact h2 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -392,7 +393,7 @@ textarea {
 
 input,
 textarea {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -454,7 +455,7 @@ textarea {
   }
 
   .nav-link {
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -559,4 +560,59 @@ textarea {
     width: 3vw;
     height: 32px;
   }
+}
+
+.toggle-menu {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(60 58 57 / 90%);
+  z-index: 10;
+  padding: 62px 28px;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.toggle-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+.toggle-nav .nav-list .nav-item {
+  border-bottom: 2px solid #6f6c6b;
+}
+
+.toggle-nav .nav-list .nav-item a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff5e1;
+  margin-bottom: 40px;
+}
+
+.close-wrapper {
+  padding: 16px 100px;
+}
+
+.toggle-menu img {
+  float: right;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.hidden {
+  display: none;
 }

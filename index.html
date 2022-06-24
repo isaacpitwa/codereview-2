@@ -10,9 +10,9 @@
   </head>
   <body>
     <header>
-      <h1 id="logo">Aziz Mejri</h1>
-      <button type="button" class="menu-bars">
-        <i class="fas fa-bars"></i>
+      <h1 id="logo" >Aziz Mejri</h1>
+      <button type="button" class="menu-bars"  onclick="toggleMenu()" id="toggle-btn">
+        <img src="./media/svg/humberg.svg" alt="Humburg"  />
       </button>
       <nav id="desktop-nav">
         <ul>
@@ -25,7 +25,17 @@
           </li>
         </ul>
       </nav>
-    </header>
+      <div id="toggle-menu" class="hidden">
+        <div class="close-wrapper clearfix"><img src="./media/svg/close.svg" alt="Close"  onclick="toggleMenu()"/></div>
+        <nav class="toggle-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" onclick="mobileMenuOption(event,'Portoflio')">Portoflio</a></li>
+                <li class="nav-item"><a href="#" onclick="mobileMenuOption(event,'About')">About</a></li>
+                <li class="nav-item"><a href="#" onclick="mobileMenuOption(event,'Contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header> 
     <main>
       <div id="intro">
         <div class="intro-icon">
@@ -442,5 +452,6 @@
       src="https://kit.fontawesome.com/e966a3bd22.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
